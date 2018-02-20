@@ -51,6 +51,7 @@ h2{
     color: #808080;
 
 
+
 }
 .color_div_titre{
     color: black;
@@ -89,8 +90,7 @@ h2{
 
 }
 .video{
-  width:660px;
-  height: 600px;
+  width:100%;
 }
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (min-width: 1159px) {
