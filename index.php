@@ -29,7 +29,7 @@
     <body>
 
         <!--Dropdown debut-->
-        <nav class="navbar navbar-inverse navbar-static-top custom-navbar" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top custom-navbar" role="navigation">
       <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -38,7 +38,7 @@
           <span class="icon-bar"></span>
         </button>
         <div class="navbar-header">
-            <img src="Images/hslogo.png" class="navbar-brand" rel="home" href="#" title="Help" alt="">
+            <img src="Images/hslogo.png" class="navbar-brand"  width="50px" height="50px">
           <!-- <a src="">Brand</a> -->
 
 
