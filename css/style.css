@@ -1,0 +1,76 @@
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+
+/*carousel*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+}
+
+
+body{
+
+    background-color:  red;
+}
+
+
+/* debut menu burger */
+
+.navbar-toggle{
+    background-color: rgba (0.0.0.1);
+
+}
+/* fin menu burger */
+
+
+h2{
+    text-align: center;
+}
+
+.bg_div{
+
+    text-align: justify;
+    margin-top: 30px;
+    color: #808080;
+
+
+}
+.color_div_titre{
+    color: black;
+    text-align: center;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+
+}
+.centre{
+    text-align: center;
+}
+.img-cont{
+    width: 25px;
+    height: 25px;
+}
+
+.img-cont2{
+    width: 40px;
+    height: 40px;
+
+}
+
+.bla{
+    text-align: justify;
+}
