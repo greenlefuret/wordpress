@@ -115,10 +115,7 @@
 <div class="part2">
     <div class="container">
         <div class="row jumbotron">
-            <div class=" col-12 col-lg-7">
-
-                <iframe class="video img-fluid" src="https://www.youtube.com/embed/NS1QdFNC0RE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+                <iframe class="video col-12 col-lg-7" src="https://www.youtube.com/embed/NS1QdFNC0RE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="Texte col-12 col-lg-5">
                 <h4>About Our University</h4>
                 <p class=" bg_div">As one of the world's premier academic and research institutions, the Modern University has driven new ways of thinking since our founding. Today, we represent an intellectual destination that draws inspired scholars to our local and international campuses, keeping us at the nexus of ideas that challenge and change the world and provide companies with new specialists.</p>
@@ -159,18 +156,18 @@
 </div>
 <div class="container">
   <div class="row">
-          <div class="col-3 jumbotron  bg_div">
+          <div class="col-lg-3 jumbotron  bg_div">
               <img class="logoindex center-block" src="Images/carte.png" alt="Logo">
           </div>
-          <div class="col-3 jumbotron  bg_div">
+          <div class="col-lg-3 jumbotron  bg_div">
               <h4 class="color_div_titre">Salut
               </h4>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
-          <div class="col-3 jumbotron  bg_div">
+          <div class="col-lg-3 jumbotron  bg_div">
             <img class="logoindex center-block" src="Images/carte.png" alt="Logo">
           </div>
-          <div class="col-3 jumbotron  bg_div">
+          <div class="col-lg-3 jumbotron  bg_div">
             <h4 class="color_div_titre">Salut
             </h4>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
