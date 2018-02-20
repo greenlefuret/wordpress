@@ -19,11 +19,6 @@
 
 
 
-
-
-
-
-
         <title>Index</title>
     </head>
     <body>
@@ -38,8 +33,10 @@
           <span class="icon-bar"></span>
         </button>
         <div class="navbar-header">
-            <img src="Images/hslogo.png" class="navbar-brand"  width="50px" height="50px">
-          <!-- <a src="">Brand</a> -->
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="Images/hslogo2.png" width="30px" height="30px">
+            </a>
+
 
 
         </div>
