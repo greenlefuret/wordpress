@@ -45,8 +45,8 @@
         <div class="collapse navbar-left navbar-collapse " id="navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li ><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="pages/pages1.php">Page 1</a></li>
+
           </ul>
         </div>
         <!--/.nav-collapse -->
