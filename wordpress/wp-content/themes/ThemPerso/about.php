@@ -1,6 +1,5 @@
-
 /*
-* Template Name: pages1
+* Template Name: about
 */
 
 <?php  get_header(); ?>
@@ -21,7 +20,7 @@
         </button>
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-                <img alt="Brand" src="../../wp-content/themes/ThemPerso/Images/hslogo2.png" width="30px" height="30px">
+                <img alt="Brand" src="wp-content/themes/ThemPerso/Images/hslogo2.png" width="30px" height="30px">
             </a>
 
 
