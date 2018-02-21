@@ -145,7 +145,7 @@
   </div>
 </div>
 
-<h2>repertoire :<?php get_stylesheet_directory_uri() ?></h2>
+<?php get_stylesheet_directory_uri() ?>
 <div class="container-fluid">
   <div class="row">
     <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.7670426727345!2d1.261163815951346!3d45.83594597910716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f934beb2f8f87f%3A0xc6ef4bf60f6e9f84!2sCours+Gay+Lussac%2C+Limoges!5e0!3m2!1sfr!2sfr!4v1519130495807" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
