@@ -31,7 +31,7 @@
         </button>
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-                <img alt="Brand" src="../Images/hslogo2.png" width="30px" height="30px">
+                <img alt="Brand" src="wp-content/themes/ThemPerso/Images/hslogo2.png" width="30px" height="30px">
             </a>
 
 
@@ -273,7 +273,7 @@
 
                 <div class="text-center col-md-4">
 
-                        <img class="logo center-block" src="../Images/hslogo.png" alt="Logo">
+                        <img class="logo center-block" src="wp-content/themes/ThemPerso/Images/hslogo.png" alt="Logo">
 
                 </div>
                 <div class="Contact col-md-4">
