@@ -42,14 +42,16 @@
     </nav>
         <h2>Boxed Grid System</h2>
         <div class="container">
-
+            <?php
+                $classes=array("col-12", "col-6", "col-6", "col-4", "col-4", "col-4", "col-3", "col-3", "col-3", "col-3");
+                $i = 0;
+             ?>
 
             <div id="content">
-
                 <?php if(have_posts()) : ?>
                     <?php while(have_posts()) : the_post(); ?>
 
-                        <div class="jumbotron  bg_div">
+                        <div class="<?php echo $classes[$i++] ?> jumbotron  bg_div">
                             <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
                             <div class="bg_div"><?php the_content(); ?></div>
                         </div>

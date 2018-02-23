@@ -1,7 +1,6 @@
 
     <?php  get_header(); ?>
 
-
         <!--Dropdown debut-->
         <nav class="navbar navbar-inverse navbar-fixed-top custom-navbar" role="navigation">
       <div class="container">
@@ -21,9 +20,9 @@
         <!-- the collapsing menu -->
         <div class="collapse navbar-left navbar-collapse " id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li ><a class="active" href="#">Home</a></li>
+            <li ><a class="active" href="http://localhost/AFORMAC2017/wordpress/wordpress/">Home</a></li>
             <li><a href="http://localhost/AFORMAC2017/wordpress/wordpress/index.php/pages1/">Page 1</a></li>
-
+            <li><a href="http://localhost/AFORMAC2017/wordpress/wordpress/index.php/category/bootstrap-grid/">bt grid</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -34,6 +33,9 @@
 
     	<!--Dropdown FIN-->
 <div class="container-fluid">
+
+
+
 
     <div class="row">
 
@@ -78,18 +80,23 @@
         </div>
     </div>
 </div>
-<div class="part2">
-    <div class="container">
-        <div class="row jumbotron">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pJolAuPY90U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="Texte col-12 col-lg-5">
-                <h4>About Our University</h4>
-                <p class=" bg_div">As one of the world's premier academic and research institutions, the Modern University has driven new ways of thinking since our founding. Today, we represent an intellectual destination that draws inspired scholars to our local and international campuses, keeping us at the nexus of ideas that challenge and change the world and provide companies with new specialists.</p>
+<div id="content">
+    <div class="part2">
+        <div class="container">
+            <div class="row jumbotron">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pJolAuPY90U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="Texte col-12 col-lg-5">
+                    <h4>About Our University</h4>
+                    <p>As one of the world’s premier academic and research institutions, the Modern University has driven new ways of thinking since our founding. Today, we represent an intellectual destination that draws inspired scholars to our local and international campuses, keeping us at the nexus of ideas that challenge and change the world and provide companies with new specialists.</p>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
-<div class="container">
+
+
+<!-- <div class="container">
   <div class="row">
           <div class="col-4 jumbotron  bg_div ">
               <h4 class="color_div_titre">Je
@@ -119,30 +126,63 @@
               </div>
           </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="jumbotron col-lg-6 col-sm-12">
-          <div class="bg_div col-lg-6 ">
-              <img class="logoindex center-block" src="wp-content/themes/ThemPerso/Images/carte.png" alt="Logo">
-          </div>
-          <div class="bg_div col-lg-6 ">
-              <h4 class="color_div_titre">Salut
-              </h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+</div> -->
+<div class=" container">
+
+    <div class="row" id="content ">
+
+        <?php if(have_posts()) : ?>
+            <?php query_posts('category_name=Bootstrap grid'); ?>
+            <?php while(have_posts()) : the_post(); ?>
+
+                <div class="jumbotron col-4  bg_div">
+                    <h4 ><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+                    <div class=" bg_div"><?php the_content(); ?></div>
+                </div>
+
+            <?php endwhile; ?>
+        <?php endif; ?>
     </div>
-    <div class="jumbotron col-lg-6 col-sm-12">
-          <div class="bg_div col-lg-6 ">
-              <img class="logoindex center-block" src="wp-content/themes/ThemPerso/Images/carte.png" alt="Logo">
-          </div>
-          <div class="bg_div col-lg-6 ">
-              <h4 class="color_div_titre">Salut
-              </h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+
+
+    <div class="jumbotron col-lg-6 col-sm-12 row">
+
+        <div class="col-6 bg_div">
+            <?php if(have_posts()) : ?>
+
+                <?php query_posts('category_name=Salut'); ?>
+            <?php while(have_posts()) : the_post(); ?>
+
+            <h4 ><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+            <?php the_content(); ?>
+        </div>
+        <div class="col-6 bg_div">
+            <?php the_post_thumbnail(); ?>
+        </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
     </div>
-  </div>
+
+
+
+    <div class="jumbotron col-lg-6 col-sm-12 row">
+
+        <div class="col-6 bg_div">
+            <?php if(have_posts()) : ?>
+
+                <?php query_posts('category_name=Salut'); ?>
+            <?php while(have_posts()) : the_post(); ?>
+
+            <h4 ><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
+            <?php the_content(); ?>
+        </div>
+        <div class="col-6 bg_div">
+            <?php the_post_thumbnail(); ?>
+        </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+
 </div>
 
 <?php get_stylesheet_directory_uri() ?>

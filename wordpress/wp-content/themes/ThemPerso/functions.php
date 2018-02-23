@@ -1,4 +1,9 @@
 <?php
+/*
+require TEMPLATEPATH.'/framework/theme.php';
+$theme=new Theme();
+*/
+
 function theme_scripts(){
      global $wp_scripts;
      //wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . '/librairies/bootstrap/js/bootstrap.bundle.min.js', null, true );
@@ -16,4 +21,9 @@ function theme_styles(){
     wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles');
+add_theme_support( 'post-thumbnails' );
+
+
+
+
     ?>
